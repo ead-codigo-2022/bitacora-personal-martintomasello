@@ -1,0 +1,22 @@
+h2 {
+    color:brown
+}
+a{
+    display: inline-block;
+	width: 70px;
+	padding-top: .5rem;
+	padding-bottom: .5rem;
+	text-align: center;
+	background: rgb(150, 230, 150);
+	border: 5px solid rgb(77, 144, 120);
+    border-radius: 20px;
+}
+.mono{
+    width: 500px;
+    height: auto;
+    padding: auto;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid;
+}
