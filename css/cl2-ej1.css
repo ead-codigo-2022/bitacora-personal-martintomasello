@@ -1,0 +1,12 @@
+p,em,div,span,
+header,nav,
+main,section,article,aside,
+footer{
+    border: solid 1px;
+}
+
+@media screen and (max-width: 420px) {
+    body{
+        font-size: 4vw;
+    }
+}
