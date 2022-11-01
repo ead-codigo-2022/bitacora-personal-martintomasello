@@ -13,19 +13,28 @@
     --color-4: #cacad5;
     --color-5: #e9edea;
     --color-6: #ff6200;
+
+    font-size: ;
 }
 body{
     background-color: var(--color-4);
     color: var(--color-1);
 }
 h1{
-    padding-bottom: .5em;
+   margin-bottom: 3rem;
+}
+figure iframe{
+    width: 100%;
+    height: 100%;
 }
 
 main{
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
 section{
     scroll-snap-align: start;
@@ -43,14 +52,13 @@ section{
     height: 100vh;
 }
 
-figure iframe{
-    width: 100%;
-    height: 100%;
+.section{
+    padding: 8% 0 30%;
 }
 
 .cards-section{
     width: 100%;
-    padding: 20% 10%;
+    padding: 0 10%;
     display: grid;
     gap: 1rem;
     grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
@@ -59,7 +67,7 @@ figure iframe{
     height: auto;
     padding-bottom: 1rem;
     overflow: hidden;
-    font-size: xx-small;
+    font-size: .68rem;
 
     background-color: var(--color-5);
     box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
@@ -76,7 +84,10 @@ figure iframe{
 
 }
 .card article{
-    padding: .5rem;
+    padding: 8%;
+}
+.card h1{
+    margin-bottom: 1em;
 }
 .card a{
     margin-right: 1rem;

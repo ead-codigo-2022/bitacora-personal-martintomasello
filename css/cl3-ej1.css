@@ -1,5 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap');
+
+body{
+    font-family: 'Inconsolata', monospace;
+    background-color: brown;
+    color: aliceblue;
+}
+.particular{
+    font-weight: 100;
+}
 @media screen and (max-width: 420px) {
     body{
-        font-size: 4vw;
+        font-size: 3vw;
     }
 }

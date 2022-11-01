@@ -16,10 +16,88 @@
 
 body{
     background-color: var(--color-5);
+    display: grid;
+    grid-template-columns: auto 1fr 1fr;
+    grid-row: repeat(3, auto);
+}
+header{
+    background-color: var(--color-3);
+    height: 4rem;
+    grid-column: 1/4;
+}
+nav{
+    background-color: var(--color-4);
+    width: 25vw;
+    height: 100%;
+    padding: 1rem;
+    grid-row: 2/4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+nav a{
+    width: 5rem;
+    height: .5rem;
+    background-color: var(--color-5);
+    border-radius: .25rem;
+}
+nav a:hover{
+    background-color: var(--color-2);
+}
+main{
+    background-color: var(--color-2);
+    width: 100%;
+    height: 200px;
+    padding: 2rem;
+    grid-column: 2/4;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
 }
 
+main div{
+    background-color: var(--color-5);
+    height: 3rem;
+    width: 2rem;
+    min-width: 1rem;
+}
+main div:nth-child(3n){
+    height: 2rem;
+}
+main div:nth-child(2){
+    height: 4rem;
+}
+main div:nth-child(4){
+    align-self: flex-start;
+}
+
+footer{
+    background-color: var(--color-1);
+    height: 2rem;
+    grid-column: 2/4;
+
+}
+.boton_on_off{
+    width: 3rem;
+    height: 3rem;
+    margin: .5rem;
+    background-color: var(--color-4);
+    border-radius: 1.5rem;
+}
+.boton_on_off:hover{
+    background-color: var(--color-2);
+}
+.lo_afectado{
+    display: none;
+}
+.lo_afectado.active{
+    display: flex;
+}
 @media screen and (max-width: 420px) {
-    body{
+    :root{
         font-size: 4vw;
     }
 }

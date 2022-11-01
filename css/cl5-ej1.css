@@ -12,34 +12,37 @@
     --color3: #f01f4b;
     --color4: #ffffff;
     --color5: #481fa0;
+
+    font-size: 16px;
 }
 
 body{
     padding: 3%;
-    font-size: 1rem;
     background-color: var(--color4);
 
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
 }
 
 span{
-    padding: .5em .75em;
-    margin-bottom: 1.66667em;
+    padding: .375rem .5625rem;
+    margin-bottom: 1.25rem;
     background-color: var(--color2);
     text-transform: uppercase;
-    font-size: .75em;
+    font-size: .75rem;
     font-weight: 600;
-    border-radius: .5em;
+    border-radius: .2rem;
 }
 
 h2{
-    font-size: 2.125em;
-    margin-bottom: 2em;
+    font-size: 2.125rem;
+    margin-bottom: 4.25rem;
+
 }
 p{
-    margin-top: 1.25em;
+    margin-top: 1.25rem;
 }
 a{
     text-decoration: none;
@@ -49,14 +52,14 @@ p a:hover{
     text-decoration: underline;
 }
 .boton{
-    margin-top: 3em;
-    padding: .9375em 2.5em;
+    margin-top: 3rem;
+    padding: .9375rem 2.5rem;
     background-color: var(--color3);
     color: var(--color4);
-    border-radius: 2em;
+    border-radius: 2rem;
 }
 .boton:hover{
-    translate: 0 -.1em;
+    translate: 0 -.1rem;
     background-color: #e11c47;
     transition: 100ms;
 }
@@ -64,26 +67,25 @@ p a:hover{
 section{
     width: 100%;
     display: grid;
-    gap: 2em;
+    gap: 2rem;
     grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
 }
 
 .card{
-    padding: 15%;
+    padding: 10%;
     background-color: var(--color2);
     color: var(--color1);
-    border-radius: 1em;
+    border-radius: 1rem;
     overflow: hidden;
 
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
     transition: 100ms;
 }
 .icon{
-    margin-bottom: 2em;
-    height: 5em;
+    margin-bottom: 2rem;
+    height: 5rem;
     width: 5em;
     background-color: var(--color5);
     border-radius: 3em;
@@ -99,7 +101,7 @@ svg{
 }
 
 @media screen and (max-width: 420px) {
-    body{
+    :root{
         font-size: 4vw;
     }
     .card{
