@@ -19,12 +19,14 @@ h1{
     font-size: 2rem;
     margin-bottom: 2rem;
 }
+
 main{
     height:100vh;
     background-color: var(--color-4);
     color: var(--color-1);
     overflow: scroll;
     scroll-snap-type:y mandatory;
+    z-index: ;
 }
 .hero,footer{
     height: 100vh;
@@ -34,8 +36,14 @@ section, footer{
     padding: 15% 5%;
 }
 .hero{
-    background: url(/img/hero.png) center/cover;
+    background: var(--color-5) url(/img/hero.png) center/cover;
     height: 100vh;
+}
+.hero h1{
+    font-size: 6rem;
+    position: relative;
+    bottom: 3rem;
+
 }
 footer{
     background-color: var(--color-1);
@@ -75,6 +83,7 @@ figure iframe{
 }
 .card h1{
     font-size: 1rem;
+    margin-bottom: 1rem;
 }
 .card figure{
     width: 100%;
@@ -84,9 +93,6 @@ figure iframe{
 }
 .card article{
     padding: 8%;
-}
-.card h1{
-    margin-bottom: 1rem;
 }
 .card a{
     margin-right: 1rem;
@@ -104,9 +110,13 @@ figure iframe{
 }
 
 
-@media screen and (max-width: 190px) {
+@media screen and (max-width: 400px) {
     :root{
         font-size: 4vw;
+    }
+    .hero h1{
+        font-size: 5rem;
+        bottom: 1rem;
     }
     .card{
         font-size: 1.2rem;
